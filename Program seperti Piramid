@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int n;
+	
+	cout << "Nama: Muhammad Yusfi Khatami" <<endl;
+	cout << "NIM: ETE10190110" <<endl;
+	cout << "Prodi: Teknik Elektromedik" <<endl;
+	cout << "Mata Kuliah: Bahasa Pemrograman" <<endl;
+	cout << "Ini Program Perulangan seperti Piramid" <<endl;
+	cout << endl;
+	cout << "Masukan panjang pola: ";
+	cin >> n;
+	
+	cout << "Pola\n";
+	
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = n; j > i; j--)
+		{
+			cout << " ";
+		}
+		for (int k = 1; k <= (2*i - 1); k++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+	}
+} 
